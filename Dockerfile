@@ -1,6 +1,7 @@
 FROM rstudio/plumber
-MAINTAINER Docker User <docker@user.org>
+MAINTAINER Martin Siklar <martin.siklar@gmail.com>
 
-RUN R -e "install.packages('broom')"
+RUN R -e "install.packages('dplyr')"
 
 CMD ["/app/plumber.R"]
+
