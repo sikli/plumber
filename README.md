@@ -12,14 +12,14 @@ navigate to the repo directory and run the docker that you have just downloaded.
 docker run --rm -p 8000:8000 -v `pwd`/hello.R:/plumber.R rstudio/plumber /plumber.R`
 
 
-##stop a running conainer
+## stop a running conainer
 `docker stop <docker name>`
 
 
-##check if docker is running and check for its name
+## check if docker is running and check for its name
 `docker ps`
 
-##Explore your docker container
+## Explore your docker container
 For example, if you want to start a container based on this image and poke around in a bash shell:
 `docker run -it --rm --entrypoint /bin/bash rstudio/plumber`
 
